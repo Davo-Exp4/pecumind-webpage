@@ -38,11 +38,11 @@ export default function Terms() {
           <section className="p-10 rounded-[2.5rem] bg-surface-container border border-white/5">
             <h2 className="text-2xl font-bold font-headline mb-6 text-secondary flex items-center gap-3">
               <span className="material-symbols-outlined">memory</span>
-              2. Uso de Inteligencia Artificial (Gemini)
+              2. Uso de Inteligencia Artificial
             </h2>
             <div className="space-y-4 text-on-surface-variant leading-relaxed font-light">
               <p>
-                Pecumind utiliza la API de Google Gemini para procesar, extraer y categorizar la información financiera
+                Pecumind utiliza modelos de Inteligencia Artificial avanzados para procesar, extraer y categorizar la información financiera
                 presente en los Datos del Usuario.
               </p>
               <p>

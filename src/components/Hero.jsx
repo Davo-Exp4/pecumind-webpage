@@ -1,4 +1,4 @@
-import heroImage from '../assets/hero.png';
+import heroImage from '../assets/hero_pro.png';
 
 export default function Hero() {
   return (
@@ -19,16 +19,13 @@ export default function Hero() {
             Leemos tus recibos bancarios y los categorizamos con precisión quirúrgica. La libertad financiera comienza con claridad absoluta.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 items-center">
-            <button className="w-full sm:w-auto px-10 py-5 rounded-2xl bg-primary text-on-primary-container font-extrabold text-lg shadow-2xl shadow-primary/20 hover:scale-[1.02] hover:shadow-primary/40 active:scale-95 transition-all">
-              Próximamente
-            </button>
-            <div className="flex gap-4">
-              <button className="p-4 rounded-2xl glass-card hover:bg-white/5 transition-all group" title="iOS App">
-                <span className="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform" data-icon="apple">apple</span>
-              </button>
-              <button className="p-4 rounded-2xl glass-card hover:bg-white/5 transition-all group" title="Android App">
-                <span className="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform" data-icon="android">android</span>
-              </button>
+            <div className="flex gap-4 items-center mt-2">
+              <a href="#" className="hover:scale-[1.02] transition-transform flex items-center justify-center" aria-label="Descargar en el App Store">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Descargar en el App Store" className="h-[44px] w-[130px] object-contain" />
+              </a>
+              <a href="#" className="hover:scale-[1.02] transition-transform flex items-center justify-center -ml-2" aria-label="Disponible en Google Play">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Disponible en Google Play" className="h-[64px] object-contain" style={{ width: '150px' }} />
+              </a>
             </div>
           </div>
           <div className="mt-16 flex items-center gap-8 border-t border-white/5 pt-8">
@@ -83,8 +80,9 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            <div className="absolute -right-12 -bottom-12 w-[240px] h-[480px] bg-black rounded-[2.5rem] border-[6px] border-[#222] shadow-2xl rotate-6 transition-transform group-hover:rotate-3 duration-700 hidden xl:block">
-              <img alt="Mobile Dashboard" className="w-full h-full object-cover rounded-[2rem] opacity-90" src={heroImage} />
+            <div className="absolute -right-8 -bottom-16 w-[300px] h-[600px] border-[4px] border-[#222] shadow-[0_30px_60px_rgba(0,0,0,0.8)] rotate-6 transition-transform group-hover:rotate-3 duration-700 hidden xl:block rounded-[3rem] overflow-hidden bg-black z-20">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-black rounded-b-xl z-30"></div>
+              <img alt="Mobile Dashboard" className="w-full h-full object-cover opacity-95" src={heroImage} />
             </div>
           </div>
         </div>

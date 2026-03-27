@@ -20,7 +20,7 @@ export default function Features() {
               <div className="w-20 h-20 rounded-3xl bg-secondary/10 flex items-center justify-center mb-10 group-hover:scale-110 group-hover:bg-secondary/20 transition-all duration-500">
                 <span className="material-symbols-outlined text-secondary text-4xl" data-icon="psychology">psychology</span>
               </div>
-              <h3 className="text-2xl font-bold font-headline mb-6">2. IA Gemini Analiza</h3>
+              <h3 className="text-2xl font-bold font-headline mb-6">2. Nuestra IA Analiza</h3>
               <p className="text-on-surface-variant text-lg leading-relaxed font-light">Nuestra IA clasifica inteligentemente tus movimientos. Entiende el contexto local de tus gastos.</p>
               <div className="absolute bottom-6 right-10 text-6xl font-black text-white/5 group-hover:text-secondary/10 transition-colors">02</div>
             </div>
@@ -60,7 +60,7 @@ export default function Features() {
                 <span className="material-symbols-outlined text-primary text-5xl" data-icon="verified_user">verified_user</span>
               </div>
               <h3 className="text-3xl font-bold font-headline mb-6">Alta Precisión</h3>
-              <p className="text-on-surface-variant text-lg leading-relaxed">Potenciado por Gemini AI para entender la jerga financiera de Ecuador.</p>
+              <p className="text-on-surface-variant text-lg leading-relaxed">Potenciado por Inteligencia Artificial para entender la jerga financiera de Ecuador.</p>
             </div>
             <div className="md:col-span-4 p-12 rounded-[3.5rem] bg-surface-container-high border border-white/5 hover:border-white/10 transition-all">
               <span className="material-symbols-outlined text-4xl text-on-surface-variant mb-8" data-icon="shield_lock">shield_lock</span>
@@ -75,15 +75,15 @@ export default function Features() {
                 </div>
                 <div className="md:w-2/5 flex justify-center gap-8 z-10">
                   <div className="flex flex-col items-center gap-4">
-                    <span className="material-symbols-outlined text-6xl text-on-surface-variant/40" data-icon="laptop_mac">laptop_mac</span>
-                    <span className="text-xs font-bold uppercase tracking-widest opacity-40">Web App</span>
-                  </div>
-                  <div className="flex flex-col items-center justify-center">
-                    <span className="material-symbols-outlined text-3xl text-primary animate-pulse" data-icon="sync">sync</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-4">
                     <span className="material-symbols-outlined text-6xl text-primary" data-icon="smartphone">smartphone</span>
                     <span className="text-xs font-bold uppercase tracking-widest text-primary">Mobile</span>
+                  </div>
+                  <div className="flex flex-col items-center justify-center">
+                    <span className="material-symbols-outlined text-3xl text-secondary animate-pulse" data-icon="sync">sync</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-4">
+                    <span className="material-symbols-outlined text-6xl text-primary" data-icon="tablet_mac">tablet_mac</span>
+                    <span className="text-xs font-bold uppercase tracking-widest text-primary">Tablet</span>
                   </div>
                 </div>
                 <div className="absolute right-0 bottom-0 opacity-5 pointer-events-none">
@@ -100,7 +100,7 @@ export default function Features() {
           <div className="text-center mb-24">
             <span className="text-primary font-bold uppercase tracking-widest text-sm mb-4 block">Omnicanal</span>
             <h2 className="text-5xl md:text-7xl font-extrabold font-headline mb-8 tracking-tighter">Tu asistente, en todas partes</h2>
-            <p className="text-on-surface-variant text-xl max-w-3xl mx-auto font-light leading-relaxed">Desarrollado con Flutter para garantizar que la experiencia sea igual de fluida en tu iPhone que en tu navegador de escritorio.</p>
+            <p className="text-on-surface-variant text-xl max-w-3xl mx-auto font-light leading-relaxed">Garantizamos que la experiencia sea igual de fluida e intuitiva sin importar el dispositivo que utilices.</p>
           </div>
           <div className="relative w-full aspect-[21/9] rounded-[4rem] overflow-hidden border border-white/5 obsidian-panel shadow-[0_60px_120px_rgba(0,0,0,0.7)] group">
             <img alt="Financial Ecosystem" className="w-full h-full object-cover opacity-20 scale-105 group-hover:scale-100 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPlCj4lapkJX5hOiTBdFfXYCDoMBsm57QtYgRLKC7rwjjI2A4dSxmuk0h33yrStMDgO1T1Dq6g4eFjgUuNfBd0uhw_FgpQGX5XQFu74uLV3rOltdHrBU8jLmkrCHm5Kp9PBDCpktur1Ise9hx1QWTM3GXl9CMmmUd7AzT6B1ozlhMCcLheyFeCtZQZ6hrhPzTmTF9fdIi-lD6zu-deVp9akhbIWKrDM5I6fwt5aXfA-3--1bixMvD2zmrbUrUrp1zQcxqgZyTa9SY" />
@@ -108,10 +108,10 @@ export default function Features() {
               <div className="max-w-4xl text-center z-10">
                 <div className="flex justify-center gap-12 mb-12">
                   <div className="flex flex-col items-center gap-3">
-                    <div className="w-16 h-16 rounded-2xl glass-card flex items-center justify-center text-primary border-primary/20">
-                      <span className="material-symbols-outlined text-3xl" data-icon="web">web</span>
+                    <div className="w-16 h-16 rounded-2xl glass-card flex items-center justify-center text-primary-container border-primary-container/20">
+                      <span className="material-symbols-outlined text-3xl" data-icon="smartphone">smartphone</span>
                     </div>
-                    <span className="text-xs font-bold opacity-60">Desktop</span>
+                    <span className="text-xs font-bold opacity-60">Mobile</span>
                   </div>
                   <div className="flex flex-col items-center gap-3">
                     <div className="w-16 h-16 rounded-2xl glass-card flex items-center justify-center text-secondary border-secondary/20">
@@ -119,15 +119,9 @@ export default function Features() {
                     </div>
                     <span className="text-xs font-bold opacity-60">Tablet</span>
                   </div>
-                  <div className="flex flex-col items-center gap-3">
-                    <div className="w-16 h-16 rounded-2xl glass-card flex items-center justify-center text-primary-container border-primary-container/20">
-                      <span className="material-symbols-outlined text-3xl" data-icon="smartphone">smartphone</span>
-                    </div>
-                    <span className="text-xs font-bold opacity-60">Mobile</span>
-                  </div>
                 </div>
                 <h3 className="text-4xl md:text-5xl font-extrabold mb-8 font-headline leading-tight">Diseñado para la eficiencia</h3>
-                <p className="text-xl text-on-surface/80 max-w-2xl mx-auto font-light leading-relaxed">Analiza tus reportes profundos en la pantalla grande de tu laptop, y toma decisiones rápidas desde tu móvil mientras estás en movimiento.</p>
+                <p className="text-xl text-on-surface/80 max-w-2xl mx-auto font-light leading-relaxed">Analiza tus reportes profundos en tu tablet y toma decisiones rápidas desde tu móvil mientras estás en movimiento.</p>
               </div>
             </div>
           </div>

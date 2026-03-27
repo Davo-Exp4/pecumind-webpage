@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-6 mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-        <span className="text-on-surface-variant text-sm font-light">© 2024 Pecumind Ecuador. Todos los derechos reservados.</span>
+        <span className="text-on-surface-variant text-sm font-light">© 2026 Pecumind Ecuador. Todos los derechos reservados.</span>
         <div className="flex items-center gap-8 text-xs font-bold uppercase tracking-widest text-on-surface-variant">
           <span className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary"></span> Sistema Activo</span>
           <span>Versión 0.9.2 (Beta)</span>
