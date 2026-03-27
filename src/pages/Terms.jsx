@@ -8,91 +8,92 @@ export default function Terms() {
       <main className="pt-32 pb-24 px-6 flex-grow max-w-4xl mx-auto w-full">
         <div className="mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 text-xs font-bold tracking-widest uppercase mb-8">
-            Última actualización: Noviembre 2024
+            Versión 1.0 | Vigente desde: Marzo 2026
           </div>
-          <h1 className="text-4xl md:text-5xl font-extrabold font-headline mb-6 tracking-tight text-on-surface">Términos de Servicio y Privacidad</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold font-headline mb-6 tracking-tight text-on-surface">Política de Privacidad</h1>
           <p className="text-xl text-on-surface-variant leading-relaxed font-light">
-            En Pecumind, tratamos tus datos financieros con el mismo rigor que un banco suizo. No vendemos tu información. 
-            Nuestra IA analiza tus gastos, pero tú mantienes el control absoluto.
+            En Pecumind, la privacidad es un derecho fundamental y la base de la confianza de nuestros usuarios. 
+            Nuestra arquitectura permite que mantengas el control absoluto de tu información financiera en todo momento.
           </p>
+          <div className="mt-6 p-4 rounded-2xl bg-surface-container border border-white/5 text-sm text-on-surface-variant/80">
+            <p><strong>Ubicación:</strong> Quito, Ecuador</p>
+            <p><strong>Contacto:</strong> privacidad@pecumind.com</p>
+          </div>
         </div>
 
-        <div className="space-y-16">
-          <section className="p-10 rounded-[2.5rem] bg-surface-container border border-white/5">
+        <div className="space-y-12">
+          <section className="p-8 rounded-[2.5rem] bg-surface-container border border-white/5">
             <h2 className="text-2xl font-bold font-headline mb-6 text-primary flex items-center gap-3">
-              <span className="material-symbols-outlined">data_usage</span>
-              1. Recopilación de Datos
-            </h2>
-            <div className="space-y-4 text-on-surface-variant leading-relaxed font-light">
-              <p>
-                Recopilamos la información que usted proporciona directamente al usar Pecumind, incluyendo, entre otros, 
-                capturas de pantalla, archivos PDF y textos relacionados con transacciones financieras ("Datos del Usuario").
-              </p>
-              <p>
-                <strong>No requerimos sus credenciales de acceso directo a sus cuentas bancarias online.</strong> Todo el análisis
-                se realiza basándose en la documentación que usted carga en nuestra plataforma.
-              </p>
-            </div>
-          </section>
-
-          <section className="p-10 rounded-[2.5rem] bg-surface-container border border-white/5">
-            <h2 className="text-2xl font-bold font-headline mb-6 text-secondary flex items-center gap-3">
-              <span className="material-symbols-outlined">memory</span>
-              2. Uso de Inteligencia Artificial
-            </h2>
-            <div className="space-y-4 text-on-surface-variant leading-relaxed font-light">
-              <p>
-                Pecumind utiliza modelos de Inteligencia Artificial avanzados para procesar, extraer y categorizar la información financiera
-                presente en los Datos del Usuario.
-              </p>
-              <p>
-                Al usar nuestro servicio, usted consiente que sus documentos financieros sean procesados por modelos de IA 
-                estrictamente para el propósito de categorización y análisis personal. Implementamos medidas para anonimizar 
-                identificadores personales críticos antes del procesamiento.
-              </p>
-            </div>
-          </section>
-
-          <section className="p-10 rounded-[2.5rem] bg-surface-container border border-white/5">
-            <h2 className="text-2xl font-bold font-headline mb-6 text-tertiary flex items-center gap-3">
-              <span className="material-symbols-outlined">shield_locked</span>
-              3. Seguridad y Almacenamiento
-            </h2>
-            <div className="space-y-4 text-on-surface-variant leading-relaxed font-light">
-              <p>
-                Sus datos son encriptados en tránsito (TLS/SSL) y en reposo. Utilizamos infraestructura de nube segura 
-                (Firebase/Google Cloud) que cumple con los estándares de la industria (SOC 2, ISO 27001).
-              </p>
-              <p>
-                Usted puede solicitar la eliminación permanente de su cuenta y de todos los registros financieros asociados 
-                en cualquier momento desde la configuración de su perfil.
-              </p>
-            </div>
-          </section>
-
-          <section className="p-10 rounded-[2.5rem] bg-surface-container border border-white/5">
-            <h2 className="text-2xl font-bold font-headline mb-6 text-primary-container flex items-center gap-3">
               <span className="material-symbols-outlined">gavel</span>
-              4. Limitación de Responsabilidad
+              1. Identidad del Responsable
             </h2>
             <div className="space-y-4 text-on-surface-variant leading-relaxed font-light">
-              <p>
-                Pecumind es una herramienta de asistencia y análisis tecnológico. <strong>No somos asesores financieros 
-                certificados</strong> ni constituimos una entidad bancaria.
-              </p>
-              <p>
-                Cualquier decisión de inversión o gasto basada en nuestro dashboard es bajo su propio riesgo. Pecumind no 
-                se hace responsable por pérdidas financieras derivadas de la malinterpretación de las sugerencias generadas.
-              </p>
+              <p>El responsable del tratamiento es Pecumind, una aplicación de gestión financiera personal con domicilio en Quito, Ecuador.</p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Correo de contacto: <strong>privacidad@pecumind.com</strong></li>
+                <li>Delegado de Protección de Datos: <strong>dpo@pecumind.com</strong></li>
+              </ul>
             </div>
           </section>
-        </div>
 
-        <div className="mt-16 p-8 rounded-3xl bg-primary/5 border border-primary/10 text-center">
-          <p className="text-on-surface-variant font-medium mb-4">
-            Si tienes dudas sobre el tratamiento de tus datos, contáctanos:
-          </p>
-          <a href="mailto:privacidad@pecumind.ec" className="text-primary font-bold hover:underline">privacidad@pecumind.ec</a>
+          <section className="p-8 rounded-[2.5rem] bg-surface-container border border-white/5">
+            <h2 className="text-2xl font-bold font-headline mb-6 text-secondary flex items-center gap-3">
+              <span className="material-symbols-outlined">database</span>
+              2. Datos que Recopilamos
+            </h2>
+            <div className="space-y-6 text-on-surface-variant leading-relaxed font-light">
+              <div>
+                <h3 className="text-lg font-bold text-on-surface mb-2">2.1 Datos proporcionados directamente</h3>
+                <p>Nombre, correo electrónico para la gestión de la cuenta, y contraseña (almacenada con cifrado hash bcrypt).</p>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-on-surface mb-2">2.2 Sincronización de correos</h3>
+                <p>El acceso se realiza mediante OAuth 2.0; Pecumind nunca conoce ni almacena la contraseña de su correo. Se aplica un filtrado local: solo se procesan correos de entidades financieras y comercios verificados. Cualquier correo personal es descartado directamente en su dispositivo.</p>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-on-surface mb-2">2.3 Datos de transacciones</h3>
+                <p>Monto, comercio, fecha, categoría y un fragmento textual mínimo para trazabilidad del usuario.</p>
+              </div>
+            </div>
+          </section>
+
+          <section className="p-8 rounded-[2.5rem] bg-surface-container border border-white/5">
+            <h2 className="text-2xl font-bold font-headline mb-6 text-tertiary flex items-center gap-3">
+              <span className="material-symbols-outlined">memory</span>
+              3. Inteligencia Artificial y Seguridad
+            </h2>
+            <div className="space-y-4 text-on-surface-variant leading-relaxed font-light">
+              <p>Utilizamos modelos avanzados de IA exclusivamente para la extracción de datos estructurados bajo estrictas medidas de seguridad:</p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li><strong>Tránsito:</strong> Cifrado TLS 1.3 de nivel bancario.</li>
+                <li><strong>Almacenamiento:</strong> Base de datos con cifrado AES-256 en reposo.</li>
+                <li><strong>Privacidad de IA:</strong> Los datos <strong>no</strong> se utilizan para entrenar modelos de IA públicos ni de terceros. El contenido original se elimina inmediatamente tras el análisis.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section className="p-8 rounded-[2.5rem] bg-surface-container border border-white/5">
+            <h2 className="text-2xl font-bold font-headline mb-6 text-primary-container flex items-center gap-3">
+              <span className="material-symbols-outlined">person_pin</span>
+              4. Tus Derechos
+            </h2>
+            <div className="space-y-4 text-on-surface-variant leading-relaxed font-light">
+              <p>Usted puede ejercer sus derechos de forma gratuita escribiendo a <strong>privacidad@pecumind.com</strong>:</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div className="p-4 bg-surface/40 rounded-xl"><strong>Acceso:</strong> Copia de tus datos.</div>
+                <div className="p-4 bg-surface/40 rounded-xl"><strong>Rectificación:</strong> Corregir información.</div>
+                <div className="p-4 bg-surface/40 rounded-xl"><strong>Olvido:</strong> Eliminación en máx. 30 días.</div>
+                <div className="p-4 bg-surface/40 rounded-xl"><strong>Portabilidad:</strong> Datos en JSON/CSV.</div>
+              </div>
+            </div>
+          </section>
+
+          <div className="rounded-3xl p-8 bg-gradient-to-br from-primary/10 to-transparent border border-white/5">
+            <p className="text-on-surface-variant text-sm font-light text-center leading-relaxed">
+              Pecumind cumple con la Ley Orgánica de Protección de Datos Personales (LOPDP) de Ecuador.
+              Si tienes preguntas, contáctanos en <a href="mailto:privacidad@pecumind.com" className="text-primary font-bold hover:underline">privacidad@pecumind.com</a>.
+            </p>
+          </div>
         </div>
       </main>
       <Footer />
