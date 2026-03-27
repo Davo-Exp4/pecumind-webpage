@@ -15,9 +15,19 @@ export default function Terms() {
             En Pecumind, la privacidad es un derecho fundamental y la base de la confianza de nuestros usuarios. 
             Nuestra arquitectura permite que mantengas el control absoluto de tu información financiera en todo momento.
           </p>
-          <div className="mt-6 p-4 rounded-2xl bg-surface-container border border-white/5 text-sm text-on-surface-variant/80">
-            <p><strong>Ubicación:</strong> Quito, Ecuador</p>
-            <p><strong>Contacto:</strong> privacidad@pecumind.com</p>
+          <div className="mt-6 flex flex-col md:flex-row gap-4 items-start md:items-center">
+            <div className="p-4 rounded-2xl bg-surface-container border border-white/5 text-sm text-on-surface-variant/80 flex-grow">
+              <p><strong>Ubicación:</strong> Quito, Ecuador</p>
+              <p><strong>Contacto:</strong> privacidad@pecumind.com</p>
+            </div>
+            <a 
+              href="/Pecumind_Politica_Privacidad_v1.pdf" 
+              download 
+              className="flex items-center gap-2 px-6 py-4 rounded-2xl bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-all font-bold text-sm"
+            >
+              <span className="material-symbols-outlined">download</span>
+              Descargar PDF Oficial
+            </a>
           </div>
         </div>
 
