@@ -10,25 +10,21 @@ export default function Terms() {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 text-xs font-bold tracking-widest uppercase mb-8">
             Versión 1.0 | Vigente desde: Marzo 2026
           </div>
-          <h1 className="text-4xl md:text-5xl font-extrabold font-headline mb-6 tracking-tight text-on-surface">PECUMIND | Política de Privacidad</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold font-headline mb-6 tracking-tight text-on-surface">PECUMIND | Términos y Condiciones</h1>
           <p className="text-xl text-on-surface-variant leading-relaxed font-light">
-            Tu inteligencia financiera personal. La arquitectura de Pecumind permite que el usuario mantenga el control absoluto de su información financiera en todo momento.
+            Al utilizar Pecumind, aceptas las condiciones de uso de nuestra plataforma integral de inteligencia financiera personal.
           </p>
 
           <div className="mt-6 flex flex-col md:flex-row gap-4 items-start md:items-center">
             <div className="p-4 rounded-2xl bg-surface-container border border-white/5 text-sm text-on-surface-variant/80 flex-grow">
               <p><strong>Ubicación:</strong> Quito, Ecuador</p>
-              <p><strong>Contacto:</strong> privacidad@pecumind.com</p>
-              <p><strong>Delegado de Protección de Datos:</strong> dpo@pecumind.com</p>
+              <p><strong>Contacto:</strong> contacto@pecumind.com</p>
             </div>
-            <a 
-              href="/Pecumind_Politica_Privacidad_v1.pdf" 
-              download 
-              className="flex items-center gap-2 px-6 py-4 rounded-2xl bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-all font-bold text-sm"
-            >
+            {/* Si tienes un PDF de Términos y Condiciones, puedes agregarlo aquí */}
+            {/* <a href="/Pecumind_Terminos_Condiciones_v1.pdf" download className="flex items-center gap-2 px-6 py-4 rounded-2xl bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-all font-bold text-sm">
               <span className="material-symbols-outlined">download</span>
               Descargar PDF Oficial
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -36,131 +32,109 @@ export default function Terms() {
           {/* Preámbulo */}
           <section className="p-8 rounded-[2.5rem] bg-surface-container border border-white/5">
             <h2 className="text-2xl font-bold font-headline mb-6 text-primary flex items-center gap-3">
-              <span className="material-symbols-outlined">info</span>
-              Preámbulo
-            </h2>
-            <p className="text-on-surface-variant leading-relaxed font-light">
-              En Pecumind, la privacidad es un derecho fundamental y la base de la confianza de nuestros usuarios. Esta política detalla los datos recopilados, su procesamiento, con quién se comparten y los derechos de los titulares, en un lenguaje comprensible para todos.
-            </p>
-          </section>
-
-          {/* 1. Responsable */}
-          <section className="p-8 rounded-[2.5rem] bg-surface-container border border-white/5">
-            <h2 className="text-2xl font-bold font-headline mb-6 text-primary flex items-center gap-3">
               <span className="material-symbols-outlined">gavel</span>
-              1. Identidad del Responsable del Tratamiento
+              1. Aceptación de los Términos
             </h2>
             <p className="text-on-surface-variant leading-relaxed font-light">
-              El responsable del tratamiento es Pecumind, una aplicación de gestión financiera personal con domicilio en Quito, Ecuador.
+              Al acceder, descargar o usar la aplicación móvil Pecumind (iOS o Android) o cualquier servicio asociado, se establece un acuerdo legal vinculante entre tú ("el usuario") y Pecumind. Si no estás de acuerdo con estos términos y condiciones en su totalidad, no utilices nuestros servicios.
             </p>
           </section>
 
-          {/* 2. Ámbito */}
-          <section className="p-8 rounded-[2.5rem] bg-surface-container border border-white/5">
-            <h2 className="text-2xl font-bold font-headline mb-6 text-primary flex items-center gap-3">
-              <span className="material-symbols-outlined">public</span>
-              2. Ámbito de Aplicación
-            </h2>
-            <p className="text-on-surface-variant leading-relaxed font-light">
-              Esta política aplica a todos los usuarios de la aplicación móvil (iOS y Android) y servicios asociados. Cumple con la Ley Orgánica de Protección de Datos Personales (LOPDP) de Ecuador y con los principios del RGPD para usuarios en la Unión Europea.
-            </p>
-          </section>
-
-          {/* 3. Datos que Recopilamos */}
+          {/* 2. Descripción */}
           <section className="p-8 rounded-[2.5rem] bg-surface-container border border-white/5">
             <h2 className="text-2xl font-bold font-headline mb-6 text-secondary flex items-center gap-3">
-              <span className="material-symbols-outlined">database</span>
-              3. Datos que Recopilamos
+              <span className="material-symbols-outlined">account_balance_wallet</span>
+              2. Descripción del Servicio
             </h2>
-            <div className="space-y-6 text-on-surface-variant leading-relaxed font-light">
-              <div>
-                <h3 className="text-lg font-bold text-on-surface mb-2 font-headline">3.1 Datos proporcionados directamente</h3>
-                <p>Nombre, correo electrónico, contraseña (hash bcrypt) y preferencias de configuración.</p>
-              </div>
-              <div>
-                <h3 className="text-lg font-bold text-on-surface mb-2 font-headline">3.2 Sincronización de correos</h3>
-                <p>Acceso mediante OAuth 2.0 (Pecumind nunca conoce su contraseña). Filtrado local en el dispositivo: solo se procesan remitentes autorizados. Los correos seleccionados se envían cifrados para extracción de datos y el original se elimina tras el análisis.</p>
-              </div>
-              <div>
-                <h3 className="text-lg font-bold text-on-surface mb-2 font-headline">3.3 Datos estructurados e interacción</h3>
-                <p>Monto, comercio, fecha, hora y categoría. Los mensajes del Chatbot se almacenan exclusivamente de forma cifrada para tu consulta y no entrenan modelos públicos.</p>
-              </div>
-            </div>
-          </section>
-
-          {/* 4. Finalidades */}
-          <section className="p-8 rounded-[2.5rem] bg-surface-container border border-white/5">
-            <h2 className="text-2xl font-bold font-headline mb-6 text-tertiary flex items-center gap-3">
-              <span className="material-symbols-outlined">task_alt</span>
-              4. Finalidades del Tratamiento
-            </h2>
-            <div className="overflow-x-auto">
-              <table className="w-full text-left text-sm text-on-surface-variant border-collapse">
-                <thead>
-                  <tr className="border-b border-white/10">
-                    <th className="py-4 font-bold font-headline">Finalidad</th>
-                    <th className="py-4 font-bold font-headline">Base Legal</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-white/5">
-                  <tr><td className="py-3">Gestión de la cuenta</td><td className="py-3">Ejecución de contrato</td></tr>
-                  <tr><td className="py-3">Categorización transaccional</td><td className="py-3">Consentimiento explícito</td></tr>
-                  <tr><td className="py-3">Asistente financiero</td><td className="py-3">Ejecución de contrato</td></tr>
-                  <tr><td className="py-3">Seguridad y fraude</td><td className="py-3">Interés legítimo</td></tr>
-                </tbody>
-              </table>
-            </div>
-            <p className="mt-6 text-sm italic opacity-70">Nota: Los datos no se usan para entrenar modelos de IA públicos ni comerciales.</p>
-          </section>
-
-          {/* 5. IA y Proveedores */}
-          <section className="p-8 rounded-[2.5rem] bg-surface-container border border-white/5">
-            <h2 className="text-2xl font-bold font-headline mb-6 text-primary-container flex items-center gap-3">
-              <span className="material-symbols-outlined">memory</span>
-              5. Inteligencia Artificial y Proveedores
-            </h2>
+            <p className="text-on-surface-variant leading-relaxed font-light mb-4">
+              Pecumind es una plataforma tecnológica concebida para brindar herramientas avanzadas de inteligencia y gestión financiera, incluyendo, entre otros:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 text-on-surface-variant leading-relaxed font-light mb-4">
+              <li>Análisis, extracción y categorización automática de transacciones financieras utilizando algoritmos de Inteligencia Artificial.</li>
+              <li>Soporte interactivo y personalizado mediante nuestro Asistente Financiero embebido.</li>
+              <li>Funciones de sincronización y visualización del gasto y ahorro a través de tableros de control y gráficas especializadas.</li>
+            </ul>
             <p className="text-on-surface-variant leading-relaxed font-light">
-              Utilizamos IA avanzada exclusivamente para extracción de datos estructurados bajo transmisión cifrada TLS/SSL y eliminación inmediata tras el análisis. Pecumind no vende ni arrienda datos personales para fines publicitarios.
+              <strong className="text-on-surface">Importante:</strong> Pecumind funciona como una herramienta de consolidación y organización; no somos un banco ni entidad financiera autorizada, y la información otorgada no debe interpretarse como asesoría legal, contable ni fiscal acreditada.
             </p>
           </section>
 
-          {/* 6. Seguridad */}
+          {/* 3. Registro */}
+          <section className="p-8 rounded-[2.5rem] bg-surface-container border border-white/5">
+            <h2 className="text-2xl font-bold font-headline mb-6 text-tertiary flex items-center gap-3">
+              <span className="material-symbols-outlined">manage_accounts</span>
+              3. Registro y Cuentas de Usuario
+            </h2>
+            <div className="space-y-4 text-on-surface-variant leading-relaxed font-light">
+              <p>
+                Para disfrutar de todos los beneficios de la aplicación, es necesario crear una cuenta de usuario, comprometiéndose a lo siguiente:
+              </p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Ser mayor de 18 años, con capacidad completa de ejercicio según la legislación ecuatoriana y/o jurisdicciones en los que se opere la aplicación.</li>
+                <li>Otorgar información de registro veraz y mantenerla actualizada frente a cambios.</li>
+                <li>Ser responsable de resguardar adecuadamente su credenciales de acceso. Cualquier actividad ejecutada mediante tu cuenta se presume bajo tu entera responsabilidad.</li>
+              </ul>
+            </div>
+          </section>
+
+          {/* 4. Uso Aceptable */}
           <section className="p-8 rounded-[2.5rem] bg-surface-container border border-white/5">
             <h2 className="text-2xl font-bold font-headline mb-6 text-primary flex items-center gap-3">
-              <span className="material-symbols-outlined">shield_locked</span>
-              6. Medidas de Seguridad
+              <span className="material-symbols-outlined">block</span>
+              4. Uso Aceptable y Restricciones
             </h2>
-            <ul className="list-disc pl-6 space-y-4 text-on-surface-variant leading-relaxed font-light">
-              <li><strong>Cifrado:</strong> TLS 1.3 en tránsito y AES-256 en reposo.</li>
-              <li><strong>Infraestructura:</strong> Supabase con estrictos controles de acceso.</li>
-              <li><strong>Privacidad por Diseño:</strong> Filtrado local para asegurar que correos personales nunca lleguen al servidor.</li>
+            <p className="text-on-surface-variant leading-relaxed font-light mb-4">
+              Estás de acuerdo en abstenerte de ejecutar cualquiera de las siguientes prácticas prohibidas al utilizar Pecumind:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 text-on-surface-variant leading-relaxed font-light">
+              <li>Llevar a cabo acciones fraudulentas, perjudiciales o ilegales.</li>
+              <li>Afectar, sobrecargar, vulnerar u orientar cualquier vector de ataque a la seguridad y estabilidad de la infraestructura en servidores (incluyendo vulnerabilidades e ingeniería inversa a base de código o Modelos de Lenguaje).</li>
+              <li>Intentar lucrar rentando o accediendo a Pecumind sin autorización expresa de las partes involucradas.</li>
             </ul>
           </section>
 
-          {/* 7. Derechos */}
+          {/* 5. Propiedad Intelectual */}
           <section className="p-8 rounded-[2.5rem] bg-surface-container border border-white/5">
-            <h2 className="text-2xl font-bold font-headline mb-6 text-secondary flex items-center gap-3">
-              <span className="material-symbols-outlined">person_pin</span>
-              7. Derechos del Usuario
+            <h2 className="text-2xl font-bold font-headline mb-6 text-primary-container flex items-center gap-3">
+              <span className="material-symbols-outlined">copyright</span>
+              5. Propiedad Intelectual
             </h2>
-            <p className="mb-6 text-on-surface-variant font-light">Respuesta en un máximo de 15 días hábiles sobre:</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="p-4 bg-surface/40 rounded-xl"><strong>Acceso y Rectificación</strong></div>
-              <div className="p-4 bg-surface/40 rounded-xl"><strong>Supresión ("Olvido")</strong> en máx 30 días.</div>
-              <div className="p-4 bg-surface/40 rounded-xl"><strong>Portabilidad (JSON/CSV)</strong></div>
-              <div className="p-4 bg-surface/40 rounded-xl"><strong>Revocación de Consentimiento</strong></div>
-            </div>
+            <p className="text-on-surface-variant leading-relaxed font-light">
+              Todos los derechos de propiedad intelectual, marcas comerciales, código de aplicación, algoritmos y diseño gráfico son de exclusiva titularidad de Pecumind (y/o sus licenciatarios). Al descargar o utilizar la aplicación, obtienes un derecho no exclusivo, estrictamente personal, temporal y revocable para interactuar con la interfaz del usuario. Pecumind reconoce la propiedad sobre los datos transaccionales, que gestionaremos conforme lo establecido en la <a href="/privacidad" className="text-primary hover:underline">Política de Privacidad</a>.
+            </p>
           </section>
 
-          {/* 8-12 Secciones finales agrupadas */}
+          {/* 6. Limitación Responsabilidad */}
           <section className="p-8 rounded-[2.5rem] bg-surface-container border border-white/5">
-            <h2 className="text-xl font-bold font-headline mb-6 text-on-surface">Consideraciones Adicionales</h2>
-            <div className="space-y-6 text-on-surface-variant text-sm leading-relaxed font-light">
-              <p><strong>8. Retención:</strong> Transacciones mientras la cuenta esté activa. Logs técnicos por 90 días.</p>
-              <p><strong>10. Menores:</strong> Exclusivo para mayores de 18 años.</p>
-              <p><strong>11. Cookies:</strong> Solo identificadores técnicos y de diagnóstico anonimizados. Sin tracking comercial.</p>
-              <p><strong>12. Reclamaciones:</strong> Ante la Autoridad de Protección de Datos Personales del Ecuador (APDP).</p>
-            </div>
+            <h2 className="text-2xl font-bold font-headline mb-6 text-secondary flex items-center gap-3">
+              <span className="material-symbols-outlined">gpp_maybe</span>
+              6. Limitación de Responsabilidad y Exención
+            </h2>
+            <p className="text-on-surface-variant leading-relaxed font-light">
+              Pecumind no ofrece una garantía incondicional sobre la exactitud inmediata frente a variaciones de conectividad (ej. con servidores del servicio de correo). Declinamos cualquier responsabilidad en torno a pérdidas de ganancias, utilidades o por interrupciones atribuibles a eventos de fuerza mayor. Así como no certificamos una absoluta "inmunidad" pese a aplicar los mayores estándares en el manejo perimetral del ciberespacio.
+            </p>
+          </section>
+
+          {/* 7. Alteraciones */}
+          <section className="p-8 rounded-[2.5rem] bg-surface-container border border-white/5">
+            <h2 className="text-2xl font-bold font-headline mb-6 text-tertiary flex items-center gap-3">
+              <span className="material-symbols-outlined">update</span>
+              7. Actualizaciones al Término de Uso
+            </h2>
+            <p className="text-on-surface-variant leading-relaxed font-light">
+              Nos reservamos el derecho de modificar estos Términos en cualquier etapa. De existir revisiones importantes (especialmente respecto a funcionalidad pagada u operación limitante), emitiremos un aviso claro en la plataforma al menos 15 días previos a la entrada en vigor del ajuste pertinente.
+            </p>
+          </section>
+
+          {/* 8. Leyes */}
+          <section className="p-8 rounded-[2.5rem] bg-surface-container border border-white/5">
+            <h2 className="text-xl font-bold font-headline mb-6 text-on-surface">8. Ley Aplicable y Disputas</h2>
+            <p className="text-on-surface-variant text-sm leading-relaxed font-light">
+              El presente contrato por uso de servicios informáticos se regirá según la normativa vigente de la República del Ecuador. Ante desavenencias relativas a la interpretación o cumplimiento o uso del sistema, se dirimirán preferiblemente mediante mediación o arbitraje y, finalmente, si hiciese falta, ante los tribunales competentes de la ciudad de Quito.
+            </p>
+            <p className="text-on-surface-variant text-sm leading-relaxed font-light mt-4">
+              <strong>Última actualización:</strong> Marzo de 2026.
+            </p>
           </section>
         </div>
       </main>

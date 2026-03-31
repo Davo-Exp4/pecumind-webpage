@@ -25,9 +25,9 @@ export default function Footer() {
         <div className="md:col-span-2">
           <h4 className="text-on-surface font-bold mb-8 font-headline text-sm uppercase tracking-widest">Legal</h4>
           <ul className="space-y-4">
-            <li><Link className="text-on-surface-variant hover:text-primary transition-colors text-base" to="/terminos">Política de Privacidad</Link></li>
-            <li><Link className="text-on-surface-variant hover:text-primary transition-colors text-base" to="/terminos">Términos de Servicio</Link></li>
-            <li><Link className="text-on-surface-variant hover:text-primary transition-colors text-base" to="/terminos">Cookies</Link></li>
+            <li><Link className="text-on-surface-variant hover:text-primary transition-colors text-base" to="/privacidad">Política de Privacidad</Link></li>
+            <li><Link className="text-on-surface-variant hover:text-primary transition-colors text-base" to="/terminos">Términos y Condiciones</Link></li>
+            <li><Link className="text-on-surface-variant hover:text-primary transition-colors text-base" to="/privacidad">Cookies</Link></li>
           </ul>
         </div>
         <div className="md:col-span-2">
