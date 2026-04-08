@@ -20,8 +20,9 @@ export default function DownloadBeta() {
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
           {/* iOS Button */}
           <a
-            href="/downloads/pecumind-beta-ios.ipa"
-            download
+            href="https://drive.google.com/file/d/1DPmqFbc750_MDbAguDx9x3ZEfkUiw1EK/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group flex items-center gap-4 bg-surface-container-high border border-white/10 text-on-surface px-8 py-4 rounded-2xl hover:bg-surface-container-highest hover:border-white/20 transition-all duration-300 shadow-lg hover:shadow-primary/10 w-full sm:w-auto"
           >
             <div className="p-2 bg-white/5 rounded-xl group-hover:bg-white/10 transition-colors">
@@ -30,15 +31,16 @@ export default function DownloadBeta() {
               </svg>
             </div>
             <div className="text-left">
-              <div className="text-xs font-semibold opacity-70">Descargar para</div>
+              <div className="text-xs font-semibold opacity-70">Instalar en</div>
               <div className="text-xl font-bold font-headline">iOS Beta</div>
             </div>
           </a>
 
           {/* Android Button */}
           <a
-            href="/downloads/pecumind-beta-android.apk"
-            download
+            href="https://drive.google.com/file/d/1ognMryfILU6VR3UTm9SMy0WKupnIlfTS/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group flex items-center gap-4 bg-secondary/10 border border-secondary/30 text-on-surface px-8 py-4 rounded-2xl hover:bg-secondary/20 hover:border-secondary/50 transition-all duration-300 shadow-lg hover:shadow-secondary/20 w-full sm:w-auto"
           >
             <div className="p-2 bg-secondary/20 rounded-xl group-hover:bg-secondary/30 transition-colors">
@@ -47,7 +49,7 @@ export default function DownloadBeta() {
               </svg>
             </div>
             <div className="text-left">
-              <div className="text-xs font-semibold opacity-70">Descargar para</div>
+              <div className="text-xs font-semibold opacity-70">Instalar en</div>
               <div className="text-xl font-bold font-headline text-secondary">Android Beta</div>
             </div>
           </a>
