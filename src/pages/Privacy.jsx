@@ -8,7 +8,7 @@ export default function Privacy() {
       <main className="pt-32 pb-24 px-6 flex-grow max-w-4xl mx-auto w-full">
         <div className="mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 text-xs font-bold tracking-widest uppercase mb-8">
-            Versión 1.0 | Vigente desde: Marzo 2026
+            Versión 2.0 | Vigente desde: Abril 2026
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold font-headline mb-6 tracking-tight text-on-surface">PECUMIND | Política de Privacidad</h1>
           <p className="text-xl text-on-surface-variant leading-relaxed font-light">
@@ -22,7 +22,7 @@ export default function Privacy() {
               <p><strong>Delegado de Protección de Datos:</strong> dpo@pecumind.com</p>
             </div>
             <a 
-              href="/Pecumind_Politica_Privacidad_v1.pdf" 
+              href="/Pecumind_Politica_Privacidad_v2.pdf" 
               download 
               className="flex items-center gap-2 px-6 py-4 rounded-2xl bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-all font-bold text-sm"
             >
