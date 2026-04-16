@@ -107,21 +107,33 @@ export default function Privacy() {
                   <tr><td className="py-3">Categorización transaccional</td><td className="py-3">Consentimiento explícito</td></tr>
                   <tr><td className="py-3">Asistente financiero</td><td className="py-3">Ejecución de contrato</td></tr>
                   <tr><td className="py-3">Seguridad y fraude</td><td className="py-3">Interés legítimo</td></tr>
+                  <tr><td className="py-3">Servicios Personalizados de Valor Agregado (Recomendaciones de productos o servicios como tarjetas o restaurantes en base al perfil de consumo)</td><td className="py-3">Consentimiento explícito previo (Opt-in)</td></tr>
                 </tbody>
               </table>
             </div>
             <p className="mt-6 text-sm italic opacity-70">Nota: Los datos no se usan para entrenar modelos de IA públicos ni comerciales.</p>
           </section>
 
-          {/* 5. IA y Proveedores */}
+          {/* 5. Inteligencia Artificial y Proveedores */}
           <section className="p-8 rounded-[2.5rem] bg-surface-container border border-white/5">
             <h2 className="text-2xl font-bold font-headline mb-6 text-primary-container flex items-center gap-3">
               <span className="material-symbols-outlined">memory</span>
               5. Inteligencia Artificial y Proveedores
             </h2>
-            <p className="text-on-surface-variant leading-relaxed font-light">
-              Utilizamos IA avanzada exclusivamente para extracción de datos estructurados bajo transmisión cifrada TLS/SSL y eliminación inmediata tras el análisis. Pecumind no vende ni arrienda datos personales para fines publicitarios.
-            </p>
+            <div className="space-y-6 text-on-surface-variant leading-relaxed font-light">
+              <div>
+                <h3 className="text-lg font-bold text-on-surface mb-2 font-headline">5.1 Proveedores Tecnológicos</h3>
+                <p>
+                  Pecumind utiliza proveedores tecnológicos de primer nivel para brindar su servicio. Los datos se transfieren de forma segura a <strong>Google Gemini</strong> para funcionalidades de inteligencia artificial y extracción de datos, y a <strong>Supabase</strong> para el almacenamiento cifrado y seguro en la nube. Declaramos expresamente que <strong>Pecumind no vende ni comercializa estos datos con terceros</strong> para fines publicitarios o de cualquier otra índole.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-on-surface mb-2 font-headline">5.2 Uso Limitado de APIs de Google</h3>
+                <p className="p-4 bg-surface/40 rounded-xl border border-white/10 font-normal">
+                  El uso y la transferencia por parte de Pecumind a cualquier otra aplicación de la información recibida de las APIs de Google se adherirá a la Política de Datos del Usuario de los Servicios de API de Google, incluidos los requisitos de Uso Limitado.
+                </p>
+              </div>
+            </div>
           </section>
 
           {/* 6. Seguridad */}
