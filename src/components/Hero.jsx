@@ -1,33 +1,42 @@
-import heroImage from '../assets/hero_pro.png';
+import { useState, useEffect } from 'react';
+import mockupDeudas from '../assets/Mockup_Deudas.png';
+import mockupGastos from '../assets/Mockup_Gastos.png';
+import mockupAI from '../assets/Mockup_AI.png';
 
 export default function Hero() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const images = [mockupGastos, mockupDeudas, mockupAI];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative min-h-[90vh] flex items-center px-6 overflow-hidden hero-glow">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         <div className="text-left z-10 py-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 text-xs font-bold tracking-widest uppercase mb-8">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-            </span>
-            IA Financiera en Ecuador
-          </div>
           <h1 className="text-6xl md:text-[5rem] font-extrabold font-headline leading-[1] mb-8 tracking-tighter text-on-surface">
             Tus finanzas, <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary-container">automatizadas</span>
           </h1>
           <p className="text-xl md:text-2xl text-on-surface-variant mb-12 max-w-xl leading-relaxed font-light">
-            Leemos tus recibos bancarios y los categorizamos con precisión quirúrgica. La libertad financiera comienza con claridad absoluta.
+            Pecumind automatiza el registro de tus gastos y te ofrece consejos personalizados para mejorar tu salud financiera en tiempo real.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 items-center">
-            <div className="flex gap-4 items-center mt-2">
-              <a href="#" className="hover:scale-[1.02] transition-transform flex items-center justify-center" aria-label="Descargar en el App Store">
-                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Descargar en el App Store" className="h-[44px] w-[130px] object-contain" />
-              </a>
-              <a href="#" className="hover:scale-[1.02] transition-transform flex items-center justify-center -ml-2" aria-label="Disponible en Google Play">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Disponible en Google Play" className="h-[64px] object-contain" style={{ width: '150px' }} />
-              </a>
-            </div>
-          </div>
+          <form className="flex flex-col sm:flex-row gap-4 items-center w-full max-w-lg" onSubmit={(e) => e.preventDefault()}>
+            <input 
+              type="email" 
+              placeholder="Tu correo electrónico" 
+              className="bg-white/5 border border-white/10 rounded-full px-6 py-4 w-full flex-1 text-on-surface focus:outline-none focus:border-primary/50 transition-colors"
+              required
+            />
+            <button 
+              type="submit"
+              className="bg-gradient-to-r from-blue-600 to-blue-400 text-white font-bold rounded-full px-8 py-4 whitespace-nowrap hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all">
+              SOLICITAR ACCESO
+            </button>
+          </form>
           <div className="mt-16 flex items-center gap-8 border-t border-white/5 pt-8">
             <div className="flex -space-x-3">
               <div className="w-10 h-10 rounded-full bg-surface-container border-2 border-surface flex items-center justify-center text-[10px] font-bold">JD</div>
@@ -39,7 +48,7 @@ export default function Hero() {
         </div>
         <div className="relative hidden lg:flex justify-center items-center">
           <div className="absolute -z-10 w-[120%] h-[120%] bg-primary/5 blur-[120px] rounded-full"></div>
-          <div className="relative w-full max-w-[600px] aspect-[4/3] obsidian-panel rounded-[2.5rem] border border-white/10 shadow-[0_40px_100px_rgba(0,0,0,0.6)] overflow-hidden group">
+          <div className="relative w-full max-w-[600px] min-h-[600px] obsidian-panel rounded-[2.5rem] border border-white/10 shadow-[0_40px_100px_rgba(0,0,0,0.6)] overflow-hidden group">
             <div className="absolute top-0 w-full h-12 bg-white/5 border-b border-white/5 flex items-center px-6 gap-2">
               <div className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]"></div>
               <div className="w-2.5 h-2.5 rounded-full bg-[#febc2e]"></div>
@@ -80,9 +89,16 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            <div className="absolute -right-8 -bottom-16 w-[300px] h-[600px] border-[4px] border-[#222] shadow-[0_30px_60px_rgba(0,0,0,0.8)] rotate-6 transition-transform group-hover:rotate-3 duration-700 hidden xl:block rounded-[3rem] overflow-hidden bg-black z-20">
+            <div className="absolute right-0 -bottom-4 w-[300px] h-[580px] border-[4px] border-[#222] shadow-[0_30px_60px_rgba(0,0,0,0.8)] rotate-6 transition-transform group-hover:rotate-3 duration-700 hidden xl:block rounded-[3rem] overflow-hidden bg-[#0A0A0A] z-20">
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-black rounded-b-xl z-30"></div>
-              <img alt="Mobile Dashboard" className="w-full h-full object-cover opacity-95" src={heroImage} />
+              {images.map((img, index) => (
+                <img 
+                  key={index}
+                  alt={`Mobile Dashboard ${index + 1}`} 
+                  className={`absolute inset-0 w-full h-full object-contain scale-[1.04] transition-opacity duration-1000 ${index === currentImageIndex ? 'opacity-95' : 'opacity-0'}`} 
+                  src={img} 
+                />
+              ))}
             </div>
           </div>
         </div>
